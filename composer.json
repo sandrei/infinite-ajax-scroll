@@ -1,5 +1,5 @@
 {
-  "name": "webcreate/jquery-ias",
+  "name": "sandrei/jquery-ias",
   "description": "Infinite AJAX Scroll: A jQuery plugin that turns your server-side pagination into an infinite scrolling one using AJAX",
   "homepage": "http://infiniteajaxscroll.com",
   "keywords": [
