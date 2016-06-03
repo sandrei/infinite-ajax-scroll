@@ -607,16 +607,17 @@
   $.fn.ias = function(option) {
     var args = Array.prototype.slice.call(arguments);
     var retval = this;
+    var ias = option.container;
 
     this.each(function() {
       var $this = $(this),
-          instance = $this.data('ias'),
+          instance = $this.data(ias),
           options = $.extend({}, $.fn.ias.defaults, $this.data(), typeof option == 'object' && option)
           ;
 
       // set a new instance as data
       if (!instance) {
-        $this.data('ias', (instance = new IAS($this, options)));
+        $this.data(ias, (instance = new IAS($this, options)));
 
         $(document).ready($.proxy(instance.initialize, instance));
       }
